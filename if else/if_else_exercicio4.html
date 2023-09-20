@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alunosfrequentes</title>
+</head>
+<body>
+    
+     informe a frequência do aluno:
+     <input type="text"  id="frequenciaaluno">
+     <button onclick="calcularfrequencia()"> Analisar frequencia </button>
+     <div id="resultado"> </div>
+</body>
+</html>
+
+<script>
+    function calcularfrequencia(){
+    var frequencia= Number(frequenciaaluno.value)
+    
+    if (frequencia<50) { resultado.innerHTML=`<img src="https://img.freepik.com/fotos-gratis/turista-com-o-polegar-para-cima_1368-7035.jpg"> `
+        
+    } else { resultado.innerHTML=`<img src="https://thumbs.dreamstime.com/b/feliz-crian%C3%A7a-lendo-muitos-livros-com-livro-na-cabe%C3%A7a-engra%C3%A7ado-garoto-escolar-nos-%C3%B3culos-educa%C3%A7%C3%A3o-f%C3%A1cil-156919444.jpg"> `
+        
+    }
+    }
+
+</script>

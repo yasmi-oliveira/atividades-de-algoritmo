@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alimentos</title>
+</head>
+<body>
+    Informe temperatura do ambiente:
+    <input type="text" id="temperatura_A">
+    <button onclick="verificar()"> Verificar Clima </button>
+    <div id="resultado"> </div>
+</body>
+</html>
+  
+<script>
+   function verificar(){
+   var temperatura= Number(temperatura_A.value)
+   if (temperatura<10) { resultado.innerHTML=`<img src=" https://viverbemsaudavel.com.br/wp-content/uploads/2016/09/ma%C3%A7a-gala-1.jpg">`
+    
+   } else { resultado.innerHTML=`<img src=" https://cdn.xxl.thumbs.canstockphoto.com.br/ma%C3%A7%C3%A3-podre-fundo-branca-vista-lateral-fotos_csp70712983.jpg">`
+    
+   }
+
+    }
+</script>

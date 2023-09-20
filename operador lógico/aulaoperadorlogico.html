@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>covid19</title>
+</head>
+<body>
+    informe o valor da sua renda:
+    <input type="text" id="valor_renda"> <br>
+    informe sua renda dotal
+    <input type="text" id="valorrenda_total"> <br>
+    <button onclick="verificarajuda()"> verificar ajuda</button>
+</body>
+</html>
+
+<script>
+    function verificarajuda(){
+        var renda= Number(valor_renda.value)
+        var rendatotal= Number(valorrenda_total.value)
+        if (renda<=1050 && rendatotal<=2100) 
+        { alert(`você terá direito!`)
+        } else alert(`você NÃO terá direito`)
+   }
+</script>

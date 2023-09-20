@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>duasnotas</title>
+</head>
+<body>
+     Informe a primeira nota do aluno:
+     <input type="text" id="nota"> <br>
+     Informe a segunda nota do aluno:
+     <input type="text" id="nota_2"> <br>
+     <button onclick="calcular()"> Verificar situação</button>
+     <div id="resultado"> </div>
+</body>
+</html>
+
+<script>
+    function calcular() {
+ var nota1= Number(nota.value)
+ var nota2= Number(nota_2.value)
+ var media= (nota1+nota2)/2
+
+if (media<6) { resultado.innerHTML=`Tente outra vez...`
+    
+} else { resultado.innerHTML=`Parabens, aprovado!`
+    
+}
+    }
+</script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UsTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bancoxpto</title>
+</head>
+<body>
+   <h1> <b>Banco XPTO </b></h1>
+    informe o saldo da conta:
+  <input type="text" id="saldo_da_conta"> <br>;
+   informe o valor do débito:
+  <input type="text"  id="valor_debito"> <br>;
+  <button onclick="calcularconta()">
+    analisar conta
+  </button>
+<span id="contabancaria" style="color: red;"> </span>
+<span id="conta_bancaria" style="color: blue;"> </span>
+
+</body>
+</html>
+
+<script>
+    function calcularconta() {
+        var conta= Number(saldo_da_conta.value);
+        var debito= Number(valor_debito.value);
+        var resultado= conta-debito;
+
+        if (resultado<0) {  contabancaria.innerHTML=`<b> o saldo da sua conta corrente é ${resultado}</b> ` 
+       
+         } else { conta_bancaria.innerHTML=`<i> o saldo da sua conta corrente é ${resultado} </i> `
+        
+            
+        }
+       
+    }
+
+</script>
